@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - Fashion Store Suite</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="logo">
+            <h1><a href="index.html" style="text-decoration: none; color: inherit;">Fashion Store Suite</a></h1>
+        </div>
+        <nav class="gender-selector">
+            <a href="#">Hombre</a>
+            <a href="#">Mujer</a>
+            <a href="#">Unisex</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar ropa...">
+            <button>Buscar</button>
+        </div>
+        <div class="user-actions">
+            <a href="index.html">Inicio</a>
+            <a href="shop.html">Tienda</a>
+            <a href="booking.html">Reservas</a>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL: PANEL DE ADMINISTRACIÓN -->
+    <main>
+        <section class="admin-section">
+            <h2>Panel de Control (Dashboard)</h2>
+            <p>Bienvenido, administrador. Desde aquí puedes gestionar el inventario de la tienda.</p>
+
+            <!-- Acciones rápidas -->
+            <div class="admin-actions" style="margin-bottom: 20px;">
+                <button class="btn-primary">+ Añadir Nuevo Producto</button>
+            </div>
+
+            <!-- Tabla de gestión de productos -->
+            <div class="admin-table-container">
+                <h3>Listado de Productos</h3>
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                    <thead>
+                        <tr style="background-color: #f2f2f2;">
+                            <th>ID</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=50" alt="Sudadera" style="width: 40px; height: 40px; object-fit: cover;"></td>
+                            <td>Sudadera Oversize</td>
+                            <td>39.99 €</td>
+                            <td>
+                                <button>Editar</button>
+                                <button style="color: red;">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=50" alt="Zapatillas" style="width: 40px; height: 40px; object-fit: cover;"></td>
+                            <td>Zapatillas Urban</td>
+                            <td>69.99 €</td>
+                            <td>
+                                <button>Editar</button>
+                                <button style="color: red;">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Fashion Store Suite. Todos los derechos reservados.</p>
+            <ul class="social-links">
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">TikTok</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+                <li><a href="#" target="_blank">X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
